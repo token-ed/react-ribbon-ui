@@ -1,0 +1,22 @@
+{
+  "name": "react-ribbon-ui",
+  "version": "1.0.0",
+  "description": "React Ribbon UI component using Tailwind",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "react",
+    "tailwind",
+    "typescript",
+    "ribbon",
+    "announcement",
+    "ribbon",
+    "comming",
+    "soon",
+    "ribbon"
+  ],
+  "author": "Eduardo Fernandes",
+  "license": "ISC"
+}
