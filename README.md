@@ -1,5 +1,3 @@
-<!-- PROJECT LOGO -->
-<br />
 <div align="center">
   <h3 align="center">React Ribbon UI</h3>
   
@@ -13,7 +11,7 @@
     <a href="https://github.com/token-ed/react-ribbon-ui"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/token-ed/react-ribbon-ui">View Demo</a>
+    <a href="https://token-ed.github.io/react-ribbon-ui/">View Demo</a>
   </p>
 </div>
 
