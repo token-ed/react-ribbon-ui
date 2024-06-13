@@ -1,4 +1,4 @@
-import React from "react";
+import { default as React } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { RibbonWrapper } from "../src/components/ribbon-wrapper";
 import Ribbon from "../src/index";
@@ -11,24 +11,379 @@ export const App = () => (
 
 const AppDesktop = () => {
   return (
-    <RibbonWrapper classNames="border-blue-500 border-[1px] rounded-md h-20 m-10 p-20 flex items-center bg-blue-500/20 max-w-56">
-      <Ribbon text="NEW" position="bottom-left" />
-      <Ribbon text="NEW" position="top-left" />
-      <Ribbon text="NEW" position="top-right" />
-      <Ribbon text="NEW" position="bottom-right" />
-      Some content
-    </RibbonWrapper>
-
-    // <section className="flex flex-col gap-y-5 p-6 m-2 border-solid border-2 border-sky-500 w-fit rounded-md">
-    //   <div className="rounded-md bg-slate-400 w-96 h-52 text-center content-center border-solid border-2 border-orange-500 relative overflow-hidden">
-    //     Card 1
-    //     <Ribbon text="COMMING SOON" />
-    //   </div>
-    //   <div className="rounded-md bg-slate-400 w-96 h-52 text-center content-center border-solid border-2 border-sky-500">
-    //     Card 2
-    //   </div>
-    //   <div className="rounded-md bg-slate-400 w-96 h-52 text-center content-center">Card 3</div>
-    //   <div className="rounded-md bg-slate-400 w-96 h-52 text-center content-center">Card 4</div>
-    // </section>
+    <>
+      <section className="m-10 gap-y-4 flex flex-col">
+        <h2 className="font-bold">TOP RIGHT</h2>
+        <div className="flex xl:flex-row flex-col gap-6">
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-right" variant="announcement" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                announcement
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"announcement"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-right" variant="warning" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                warning
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"warning"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-right" variant="success" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                success
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"success"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-right" variant="error" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                error
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"error"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+        </div>
+      </section>
+      <section className="m-10 gap-y-4 flex flex-col">
+        <h2 className="font-bold">BOTTOM RIGHT</h2>
+        <div className="flex xl:flex-row flex-col gap-6">
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-right" variant="announcement" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                announcement
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"announcement"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-right" variant="warning" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                warning
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"warning"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-right" variant="success" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                success
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"success"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-right" variant="error" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                error
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-right"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"error"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+        </div>
+      </section>
+      <section className="m-10 gap-y-4 flex flex-col">
+        <h2 className="font-bold">BOTTOM LEFT</h2>
+        <div className="flex xl:flex-row flex-col gap-6">
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-left" variant="announcement" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                announcement
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"announcement"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-left" variant="warning" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                warning
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"warning"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-left" variant="success" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                success
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"success"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="bottom-left" variant="error" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                error
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"bottom-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"error"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+        </div>
+      </section>
+      <section className="m-10 gap-y-4 flex flex-col">
+        <h2 className="font-bold">TOP LEFT</h2>
+        <div className="flex xl:flex-row flex-col gap-6">
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-left" variant="announcement" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                announcement
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"announcement"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-left" variant="warning" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                warning
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"warning"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-left" variant="success" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                success
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"success"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+          <RibbonWrapper classNames="border-slate-500 justify-center border-[1px] rounded-md min-w-72 flex items-center bg-slate-600 xl:w-72 p-6">
+            <Ribbon text="NEW" position="top-left" variant="error" />
+            <div className="flex flex-col gap-y-4">
+              <p className="p-1 rounded-md bg-slate-400 inline-block text-pretty w-fit font-light text-sm">
+                error
+              </p>
+              <code className="block p-2 text-xs bg-gray-900 text-white rounded-md">
+                &lt;Ribbon&nbsp;
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">text=</span>
+                <span className="text-yellow-300">"NEW"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">position=</span>
+                <span className="text-yellow-300">"top-left"</span>
+                <br />
+                &nbsp;&nbsp;&nbsp;<span className="text-blue-400">variant=</span>
+                <span className="text-yellow-300">"error"</span>
+                <br />
+                /&gt;
+              </code>
+            </div>
+          </RibbonWrapper>
+        </div>
+      </section>
+    </>
   );
 };

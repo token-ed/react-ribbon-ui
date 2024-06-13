@@ -4,7 +4,8 @@
   "description": "React Ribbon UI component using Tailwind",
   "main": "src/index.tsx",
   "files": [
-    "src/index.tsx"
+    "src/index.tsx",
+    "src/components"
   ],
   "repository": {
     "type": "git",
@@ -32,11 +33,11 @@
   "author": "Eduardo Fernandes",
   "license": "ISC",
   "dependencies": {
-    "classnames": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss": "^3.4.4"
+    "tailwindcss": "^3.4.4",
+    "tailwindest": "^2.3.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-runtime": "^7.24.6",
