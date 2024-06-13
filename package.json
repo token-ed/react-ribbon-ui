@@ -1,6 +1,6 @@
 {
   "name": "react-ribbon-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Ribbon UI component using Tailwind",
   "main": "src/index.tsx",
   "files": [

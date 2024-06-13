@@ -36,6 +36,7 @@
       <ul>
         <li><a href="#example-1">Example 1</a></li>
         <li><a href="#example-2">Example 2</a></li>
+        <li><a href="#important-note-on-tailwindcss-integration">Important Note on TailwindCSS Integration</a></li>
       </ul>
     </li>
     <li>
@@ -103,6 +104,42 @@ However, because you may want to have Tailwind compute through your classes and 
   <p>Your Content</p>
 </div>
 ```
+
+### Important Note on Next.js Integration
+
+There is a change you are using Next.js framework to build your project. If that is the case please add this configuration line to your `next.config.mjs` file:
+
+```ts
+/** @type {import('next').NextConfig} */
+const nextConfig = { transpilePackages: ["react-ribbon-ui"] }; // add this line
+
+export default nextConfig;
+```
+
+This will ensure Next.js transpiles and bundles dependencies from this package into your project out of the box.
+
+For more information refer to: https://nextjs.org/docs/app/api-reference/next-config-js/transpilePackages
+
+### Important Note on TailwindCSS Integration
+
+As of the date of publishing this package, TailwindCSS does not support native package resolution for styles. This means that any custom styling provided by this package using TailwindCSS will not automatically be included in your project. To ensure that the TailwindCSS styles from this package are applied correctly, you need to update your TailwindCSS configuration in your project.
+
+Please follow these steps (assuming you've already installed TailwindCSS and created a configuration file):
+
+1. **Update your tailwind.config.js file** to include the paths to the components of this package:
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    ...
+    "./node_modules/react-ribbon-ui/**/*.{js,ts,jsx,tsx}", // Add this line,
+    ...
+  ],
+};
+```
+
+For more information refer to: https://tailwindcss.com/docs/content-configuration#working-with-third-party-libraries
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
