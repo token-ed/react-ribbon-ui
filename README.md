@@ -11,7 +11,7 @@
     <a href="https://github.com/token-ed/react-ribbon-ui"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://token-ed.github.io/react-ribbon-ui/">View Demo</a>
+    <a href="https://token-ed.github.io/react-ribbon-ui/" target="_blank">View Demo</a>
   </p>
 </div>
 
